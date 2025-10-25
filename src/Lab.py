@@ -1,5 +1,3 @@
-from src.Converter import Converter
-
 class Lab(): 
     def __init__(self, subject, number, maxPoints, points, passDate, theme):
         self.__subject = subject
@@ -10,7 +8,7 @@ class Lab():
         self.__theme = theme
     
     def getSubject(self):
-        return Converter.changeWord(self.__subject)
+        return self.__subject
     
     def getNumber(self):
         return self.__number

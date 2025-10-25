@@ -4,3 +4,9 @@ class KeyWords():
         "opd": "ОПД",
         "prog": "Программирование"
     }
+
+    keyWordsEditor = {
+        "inf" : "Inf",
+        "opd" : "OPD",
+        "prog" : "Prog"
+    }

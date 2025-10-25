@@ -1,4 +1,4 @@
-from src.KeyWords import KeyWords
+from KeyWords import KeyWords
 import re
 
 class Converter():
@@ -14,6 +14,13 @@ class Converter():
         else:
             return "err"
     
+    @staticmethod
+    def changeWordEditor(word):
+        if word in KeyWords.keyWordsEditor.keys():
+            return KeyWords.keyWordsEditor[word]
+        else:
+            return "err"
+
     def changeSource(self):
         if re.match(self.__pattern, self.source):
             res = self.source.split("-")
