@@ -1,6 +1,5 @@
 class Paths():
-    # workDirectory = "/home/roma/Study/"
-    workDirectory = "/home/roma/Projects/test/"
+    workDirectory = "/home/roma/Study/"
     labsFilesPaths = [
         (f"{workDirectory}Inf/inf.md", "inf"),
         (f"{workDirectory}Prog/prog.md", "prog"),

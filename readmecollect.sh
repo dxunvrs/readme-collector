@@ -1,1 +1,1 @@
-python3 src/Collector.py
+git branch | xargs python3 /home/roma/Projects/readme-collector/src/Collector.py

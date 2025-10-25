@@ -4,13 +4,10 @@ import re
 class Converter():
     __pattern = r"[a-z]+-[a-z]+-[1-9]+"
 
-    def __init__(self, source):
-        self.source = source
-
     @staticmethod
-    def changeWord(word):
-        if word in KeyWords.keyWords.keys():
-            return KeyWords.keyWords[word]
+    def changeWordConverter(word):
+        if word in KeyWords.keyWordsConverter.keys():
+            return KeyWords.keyWordsConverter[word]
         else:
             return "err"
     
@@ -21,9 +18,10 @@ class Converter():
         else:
             return "err"
 
-    def changeSource(self):
-        if re.match(self.__pattern, self.source):
-            res = self.source.split("-")
-            return res
+    @staticmethod
+    def changeSource(source):
+        if re.match(Converter.__pattern, source):
+            res = source.split("-")
+            return f"{Converter.changeWordConverter(res[0])} {Converter.changeWordConverter(res[1])} {res[2]}"
         else:
             return "err"

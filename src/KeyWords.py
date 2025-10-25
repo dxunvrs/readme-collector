@@ -1,8 +1,9 @@
 class KeyWords():
-    keyWords = {
-        "inf": "Информатика",
-        "opd": "ОПД",
-        "prog": "Программирование"
+    keyWordsConverter = {
+        "inf" : "Информатика",
+        "opd" : "ОПД",
+        "prog" : "Программирование",
+        "lab" : "лаба"
     }
 
     keyWordsEditor = {
