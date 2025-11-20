@@ -26,10 +26,10 @@ def write_lab(subject: str, number: str, max_points: str, points: str, pass_date
     empty_table: str = "|Номер|Макс. баллов|Баллы|Дата сдачи|Тема|" + "\n" + "|:-:|:-:|:-:|:-:|:-:|" + "\n" # шаблон пустой таблицы
 
     try:
-        with open(Paths.subjects_tables[subject], "a+") as file:
+        with open(Paths.subjects_tables[subject], "r+") as file:
             new_line: str = f"|{number}|{max_points}|{points}|{pass_date}|{theme}|" + "\n" # добавляем инфу о лабе
 
-            if file.read():
+            if file.read() != "":
                 file.write(new_line)
 
             else:
