@@ -1,1 +1,0 @@
-python3 /home/roma/Projects/readme-collector/src/LabEditor.py
