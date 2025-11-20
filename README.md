@@ -19,5 +19,5 @@ python3 src/LabGen.py
 Дата сдачи: xx.xx.xxxx
 Тема: Указываем тему
 ```
-3. Файлом ReadmeUpdate.py пересобрать README.md
-Шаблон для READ.md - src/Outline.md
+3. Файлом ReadmeUpdate.py пересобрать README.md  
+Шаблон для README.md - src/Outline.md
